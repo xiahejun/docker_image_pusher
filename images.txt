@@ -1,4 +1,3 @@
-docker.getcollate.io/openmetadata/db
 docker.elastic.co/elasticsearch/elasticsearch
 docker.getcollate.io/openmetadata/server
 docker.getcollate.io/openmetadata/ingestion
