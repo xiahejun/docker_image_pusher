@@ -11,7 +11,7 @@ env:
   ALIYUN_NAME_SPACE: "${{ secrets.ALIYUN_NAME_SPACE }}"
   ALIYUN_REGISTRY_USER: "${{ secrets.ALIYUN_REGISTRY_USER }}"
   ALIYUN_REGISTRY_PASSWORD: "${{ secrets.ALIYUN_REGISTRY_PASSWORD }}"
-
+  
 jobs:
 
   build:
@@ -22,6 +22,7 @@ jobs:
       run: |
         echo "Before freeing up disk space"
         echo "=============================================================================="
+        echo "======111================${{ secrets.ALIYUN_REGISTRY }}=======${{ secrets.ALIYUN_NAME_SPACE }}=======${{ secrets.ALIYUN_REGISTRY_USER }}======${{ secrets.ALIYUN_REGISTRY_PASSWORD }}===================================="
         df -hT
         echo "=============================================================================="
 
